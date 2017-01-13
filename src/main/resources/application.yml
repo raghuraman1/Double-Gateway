@@ -6,19 +6,19 @@ security:
 zuul:
   routes:
     ui:
-      url: http://localhost:8081
+      url: http://172.30.86.241:8080
       sensitive-headers:
     ui2:
-      url: http://localhost:8083
+      url: http://172.30.42.194:8080
       sensitive-headers:  
     ui3:
-      url: http://localhost:8084
+      url: http://172.30.209.21:8080
       sensitive-headers:  
     admin:
-      url: http://localhost:8082
+      url: http://172.30.253.111:8080
       sensitive-headers:
     resource:
-      url: http://localhost:9000
+      url: http://172.30.174.173:8080
       sensitive-headers:
 
 spring:
