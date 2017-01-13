@@ -24,9 +24,9 @@ zuul:
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/persondb
-    username: root
-    password: accion123!@#
+    url: jdbc:mysql://172.30.159.88:3306/raghu
+    username: raghu
+    password: raghu
     continueOnError: true
     initialize: false
     initialSize: 0
