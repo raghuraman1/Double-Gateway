@@ -6,25 +6,25 @@ security:
 zuul:
   routes:
     ui:
-      url: http://172.30.86.241:8080
+      url: http://172.30.37.163:8080
       sensitive-headers:
     ui2:
-      url: http://172.30.42.194:8080
+      url: http://172.30.147.187:8080
       sensitive-headers:  
     ui3:
-      url: http://172.30.209.21:8080
+      url: http://172.30.51.38:8080
       sensitive-headers:  
     admin:
-      url: http://172.30.253.111:8080
+      url: http://172.30.194.37:8080
       sensitive-headers:
     resource:
-      url: http://172.30.174.173:8080
+      url: http://172.30.134.55:8080
       sensitive-headers:
 
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.30.159.88:3306/raghu
+    url: jdbc:mysql://172.30.166.215:3306/raghu
     username: raghu
     password: raghu
     continueOnError: true
