@@ -6,27 +6,27 @@ security:
 zuul:
   routes:
     ui:
-      url: http://172.30.37.163:8080
+      url: http://${ui1_secret_ip}:8080
       sensitive-headers:
     ui2:
-      url: http://172.30.147.187:8080
+      url: http://${ui2_secret_ip}:8080
       sensitive-headers:  
     ui3:
-      url: http://172.30.51.38:8080
+      url: http://${ui3_secret_ip}:8080
       sensitive-headers:  
     admin:
-      url: http://172.30.194.37:8080
+      url: http://${admin_secret_ip}:8080
       sensitive-headers:
     resource:
-      url: http://172.30.134.55:8080
+      url: http://${resource_secret_ip}:8080
       sensitive-headers:
 
 spring:
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.30.166.215:3306/raghu
-    username: raghu
-    password: raghu
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${my_sql_secret_ip}:${my_sql_secret_port}/${my_sql_secret_db}
+    username: ${my_sql_secret_username}
+    password: ${my_sql_secret_password}
     continueOnError: true
     initialize: false
     initialSize: 0

@@ -70,6 +70,7 @@ public class GatewayApplication {
 //				.withUser("audit").password("audit").roles("USER", "ADMIN");
 			
 //// @formatter:on
+			System.out.println("executing select username,password, enabled from users where username=?");
 			 JdbcUserDetailsManagerConfigurer<AuthenticationManagerBuilder> usersByUsernameQuery = auth.jdbcAuthentication().dataSource(dataSource)
 			  .usersByUsernameQuery(
 			   "select username,password, enabled from users where username=?");
